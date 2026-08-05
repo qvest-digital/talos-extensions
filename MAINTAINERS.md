@@ -10,6 +10,7 @@ If the field is marked as `Needs Maintainer`, it means that the package is curre
 
 | Name                                      | Maintainer         | Github ID                                                                                |
 | ----------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------- |
+| amazon-efa                                | Qvest Digital      | [qvest-digital](https://github.com/qvest-digital)                                        |
 | amazon-ena                                | Sidero Labs        | NA                                                                                       |
 | amdgpu                                    | Sidero Labs        | NA                                                                                       |
 | amd-ucode                                 | Sidero Labs        | NA                                                                                       |

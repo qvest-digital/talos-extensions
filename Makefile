@@ -64,7 +64,8 @@ GO_TOOLS_RELEASE ?= v0.3.1
 
 # targets defines all the available targets
 
-TARGETS = amazon-ena
+TARGETS = amazon-efa
+TARGETS += amazon-ena
 TARGETS += amdgpu
 TARGETS += amd-ucode
 TARGETS += binfmt-misc
