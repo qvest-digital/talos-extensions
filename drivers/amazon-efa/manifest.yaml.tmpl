@@ -1,0 +1,11 @@
+version: v1alpha1
+metadata:
+  name: amazon-efa
+  version: "{{ .VERSION }}"
+  author: Qvest Digital
+  description: |
+    [{{ .TIER }}] This system extension provides the Amazon EFA kernel module built against a specific Talos version.
+    EFA is an OS-bypass network interface that libfabric applications use for low-latency transport between EC2 instances.
+  compatibility:
+    talos:
+      version: ">= v1.5.0"
