@@ -5,7 +5,13 @@ dependencies:
   - stage: base
   # The pkgs version for a particular release of Talos as defined in
   # https://github.com/siderolabs/talos/blob/<talos version>/pkg/machinery/gendata/data/pkgs
-  - image: "{{ .BUILD_ARG_PKGS_PREFIX }}/efa-pkg:{{ .BUILD_ARG_PKGS }}"
+  #
+  # The registry is pinned here instead of taken from BUILD_ARG_PKGS_PREFIX,
+  # which every other extension shares. efa-pkg exists only in a fork of
+  # siderolabs/pkgs, and pointing the shared prefix at that fork would send
+  # base, kernel and every other package there too, none of which it
+  # carries. Restore the shared prefix once efa-pkg is upstream.
+  - image: "ghcr.io/qvest-digital/efa-pkg:{{ .BUILD_ARG_PKGS }}"
 steps:
   - install:
       - |
