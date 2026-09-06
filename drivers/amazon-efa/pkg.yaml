@@ -11,6 +11,13 @@ dependencies:
   # siderolabs/pkgs, and pointing the shared prefix at that fork would send
   # base, kernel and every other package there too, none of which it
   # carries. Restore the shared prefix once efa-pkg is upstream.
+  #
+  # That package also patches the driver's HAVE_UDATA_TO_DRV_CONTEXT
+  # conftest, which does not compile under clang on Linux 6.18 and so leaves
+  # the macro undefined, selecting a fallback that dereferences a NULL
+  # ucontext in efa_create_user_cq. An unpatched efa-pkg builds and installs
+  # cleanly and panics the kernel on the first completion queue opened
+  # against the device.
   - image: "ghcr.io/qvest-digital/efa-pkg:{{ .BUILD_ARG_PKGS }}"
 steps:
   - install:
