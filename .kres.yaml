@@ -45,6 +45,7 @@ spec:
     - libvirtd
     - lldpd
     - mdadm
+    - mxlfs
     - mei
     - mellanox-mstflint
     - metal-agent
