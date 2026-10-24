@@ -15,7 +15,7 @@ vars:
   UTIL_LINUX_SHA512: 3aea9ebd835b353e0c73356f0e4543ba4c3ad448e4f50a386c35cfaac81cbf45425b1a6c7552ed5673580acf2b58f8af2792f5b3019ffe478edd77c7ebf444dc
   ENA_VERSION: 2.17.4 # update this when updating PKGS version tag in Makefile
   EFA_VERSION: 3.3.0 # update this when updating PKGS version tag in Makefile
-  MXLFS_VERSION: 0.0.0-10cca30 # semver for the mxlfs commit mxlfs-pkg builds, until mxlfs cuts releases
+  MXLFS_VERSION: 0.1.0-rc.1 # update this when updating the mxlfs release mxlfs-pkg builds
   TENSTORRENT_VERSION: 2.11.0 # update this when updating PKGS version tag in Makefile
   HAILORT_VERSION: 4.24.0 # update this when updating PKGS version tag in Makefile
   HAILORT_V5_VERSION: 5.4.0 # update this when updating PKGS version tag in Makefile
