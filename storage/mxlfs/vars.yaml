@@ -1,0 +1,3 @@
+# first part is the mxlfs version, second the talos version it is built against
+VERSION: "{{ .MXLFS_VERSION }}-{{ .BUILD_ARG_TAG }}"
+TIER: "contrib"

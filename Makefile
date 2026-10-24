@@ -108,6 +108,7 @@ TARGETS += kata-containers-snp
 TARGETS += libvirtd
 TARGETS += lldpd
 TARGETS += mdadm
+TARGETS += mxlfs
 TARGETS += mei
 TARGETS += mellanox-mstflint
 TARGETS += metal-agent

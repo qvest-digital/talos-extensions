@@ -1,0 +1,11 @@
+version: v1alpha1
+metadata:
+  name: mxlfs
+  version: "{{ .VERSION }}"
+  author: Qvest Digital
+  description: |
+    [{{ .TIER }}] This system extension provides the mxlfs kernel module built against a specific Talos version.
+    mxlfs is a memory filesystem for MXL domains whose views map member flows' pages into one flow.
+  compatibility:
+    talos:
+      version: ">= v1.13.0"
