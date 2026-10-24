@@ -3,7 +3,7 @@ kind: pkgfile.Build
 spec:
     targets:
         - amazon-efa
-    - amazon-ena
+        - amazon-ena
         - amdgpu
         - amd-ucode
         - binfmt-misc
@@ -36,6 +36,7 @@ spec:
         - kata-containers
         - lldpd
         - mdadm
+        - mxlfs
         - mei
         - mellanox-mstflint
         - metal-agent
