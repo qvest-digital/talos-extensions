@@ -15,7 +15,7 @@ vars:
   UTIL_LINUX_SHA512: 7415add0be2930654e322830808dde03ff6d511bd357f0679e6b6287a13ca79fe58ce4ac05edef86b76fb381b3a36ca2da9d3c31b5dc0a1d889c203156a57277
   ENA_VERSION: 2.17.3 # update this when updating PKGS version tag in Makefile
   EFA_VERSION: 3.3.0 # update this when updating PKGS version tag in Makefile
-  MXLFS_VERSION: 0.1.0-rc.2 # update this when updating the mxlfs release mxlfs-pkg builds
+  MXLFS_VERSION: 0.1.0-rc.3 # update this when updating the mxlfs release mxlfs-pkg builds
   TENSTORRENT_VERSION: 2.11.0 # update this when updating PKGS version tag in Makefile
   HAILORT_VERSION: 4.24.0 # update this when updating PKGS version tag in Makefile
   MELLANOX_MSFTFLINT_VERSION: 4.34.1-4 # update this when updating PKGS version tag in Makefile
