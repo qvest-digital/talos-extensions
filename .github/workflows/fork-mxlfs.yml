@@ -5,8 +5,8 @@ name: fork-mxlfs
 # so it neither starts nor finishes here. This builds the one extension
 # this branch exists for and publishes it to the fork's own registry.
 #
-# The branch is cut from the v1.13.6 tag, whose PKGS pin is the pkgs
-# revision Talos v1.13.6 uses. That is what makes the siderolabs base
+# The branch is cut from the v1.14.4 tag, whose PKGS pin is the pkgs
+# revision Talos v1.14.4 uses. That is what makes the siderolabs base
 # image and the mxlfs-pkg this fork publishes resolve under one tag.
 #
 # Not part of the upstream contribution: kres does not generate this file
@@ -15,7 +15,7 @@ name: fork-mxlfs
 on:
   push:
     branches:
-      - feat/mxlfs-v1.13
+      - feat/mxlfs-v1.14.4
     paths:
       - storage/mxlfs/**
       - Pkgfile
@@ -57,9 +57,17 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
+      # TAG names the Talos release and the commit. git describe finds no
+      # tag in this checkout and falls back to the bare commit, which says
+      # nothing about the kernel the module was built for; an image for one
+      # Talos release must never be taken for another's.
+      #
       # PKGS is left at the tag's own pin. amd64 only, matching the
       # package, which the pkgs fork builds for amd64 only.
       - name: build and push mxlfs
+        env:
+          TALOS_VERSION: v1.14.4
         run: |
           make mxlfs PUSH=true PLATFORM=linux/amd64 \
-            USERNAME=${{ github.repository_owner }}
+            USERNAME=${{ github.repository_owner }} \
+            TAG="${TALOS_VERSION}-g${GITHUB_SHA::7}"
