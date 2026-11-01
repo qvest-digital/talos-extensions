@@ -90,6 +90,7 @@ TARGETS += gvisor-debug
 TARGETS += hailort
 TARGETS += hello-world-service
 TARGETS += i915
+TARGETS += intel-e810-intree
 TARGETS += intel-ice-firmware
 TARGETS += intel-npu
 TARGETS += intel-ucode
