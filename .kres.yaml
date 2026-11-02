@@ -28,6 +28,7 @@ spec:
         - hailort
         - hello-world-service
         - i915
+        - intel-e810-intree
         - intel-ice-firmware
         - intel-npu
         - intel-ucode

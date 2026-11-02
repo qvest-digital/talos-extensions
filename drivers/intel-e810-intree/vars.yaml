@@ -1,0 +1,3 @@
+# first part is the kernel release whose drivers are patched, second the commit it is built from
+VERSION: "{{ .E810_INTREE_VERSION }}-{{ .BUILD_ARG_TAG }}"
+TIER: "contrib"

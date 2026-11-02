@@ -16,6 +16,7 @@ vars:
   ENA_VERSION: 2.16.1 # update this when updating PKGS_VERSION in Makefile
   EFA_VERSION: 3.3.0 # update this when updating PKGS version tag in Makefile
   MXLFS_VERSION: 0.1.0-rc.3 # update this when updating the mxlfs release mxlfs-pkg builds
+  E810_INTREE_VERSION: 6.18.38 # the kernel release intel-e810-intree-pkg patches; update this when updating PKGS_VERSION in Makefile
   TENSTORRENT_VERSION: 2.7.0 # update this when updating PKGS_VERSION in Makefile
   HAILORT_VERSION: 4.23.0 # update this when updating PKGS_VERSION in Makefile
   MELLANOX_MSFTFLINT_VERSION: 4.34.1-4 # update this when updating PKGS_VERSION in Makefile
