@@ -1,3 +1,5 @@
-# first part is the mxlfs version, second the talos version it is built against
+# first part is the mxlfs version, second the commit it is built from
 VERSION: "{{ .MXLFS_VERSION }}-{{ .BUILD_ARG_TAG }}"
 TIER: "contrib"
+# the mxlfs-pkg build, a build of the PKGS tag; each build of the fork is pushed under that tag
+MXLFS_PKG_REF: sha256:acc95faa81d60373bb2a1cce9b5aab008d94d7bb676a554dd27ce84ac0e374f9

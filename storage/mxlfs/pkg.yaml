@@ -10,7 +10,7 @@ dependencies:
   # BUILD_ARG_PKGS_PREFIX: mxlfs-pkg exists only in the fork of
   # siderolabs/pkgs, and pointing the shared prefix at the fork would
   # take base, the kernel and every other package from it too.
-  - image: "ghcr.io/qvest-digital/mxlfs-pkg:{{ .BUILD_ARG_PKGS }}"
+  - image: "ghcr.io/qvest-digital/mxlfs-pkg@{{ .MXLFS_PKG_REF }}"
 steps:
   - install:
       - |
