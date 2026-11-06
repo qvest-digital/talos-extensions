@@ -7,9 +7,9 @@ name: fork-intel-e810-oot
 # fork-mxlfs.yml builds mxlfs on this branch.
 #
 # The branch is cut from the v1.13.6 tag, whose PKGS pin is the pkgs
-# revision Talos v1.13.6 uses. That is what makes the siderolabs base
-# image and the intel-e810-oot-pkg this fork publishes resolve under one
-# tag.
+# revision Talos v1.13.6 uses, so the siderolabs base image resolves to
+# that revision. intel-e810-oot-pkg is pinned by digest
+# in drivers/intel-e810-oot/vars.yaml.
 #
 # Not part of the upstream contribution: kres does not generate this file
 # and the upstream PR must not carry it.
