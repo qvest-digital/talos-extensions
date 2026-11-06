@@ -2,4 +2,4 @@
 VERSION: "{{ .MXLFS_VERSION }}-{{ .BUILD_ARG_TAG }}"
 TIER: "contrib"
 # the mxlfs-pkg build, a build of the PKGS tag; each build of the fork is pushed under that tag
-MXLFS_PKG_REF: sha256:acc95faa81d60373bb2a1cce9b5aab008d94d7bb676a554dd27ce84ac0e374f9
+MXLFS_PKG_REF: sha256:1d5fef0d1763a35ff6e725e75e25e2663734ae0ba4e60dd0c4b199f096cbab47
