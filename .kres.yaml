@@ -2,6 +2,7 @@
 kind: pkgfile.Build
 spec:
   targets:
+    - amazon-efa
     - amazon-ena
     - amdgpu
     - amd-ucode
