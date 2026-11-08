@@ -1,0 +1,5 @@
+# the first part is the driver version and the second the talos version for which the module is built against
+VERSION: "{{ .EFA_VERSION }}-{{ .BUILD_ARG_TAG }}"
+TIER: "contrib"
+# the efa-pkg build, a build of the PKGS tag; each build of the fork is pushed under that tag
+EFA_PKG_REF: sha256:3279f6005f4d2006f774adf0ce804e4c851a27bd407d5857bc9fd719c78f61e6

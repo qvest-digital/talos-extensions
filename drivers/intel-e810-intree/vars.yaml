@@ -1,0 +1,5 @@
+# first part is the kernel release whose drivers are patched, second the commit it is built from
+VERSION: "{{ .E810_INTREE_VERSION }}-{{ .BUILD_ARG_TAG }}"
+TIER: "contrib"
+# the intel-e810-intree-pkg build, a build of the PKGS tag; each build of the fork is pushed under that tag
+E810_INTREE_PKG_REF: sha256:f1a209caa6c8dba8621218abda9765109a1e6b58aac4b93556c1b554765cffc9

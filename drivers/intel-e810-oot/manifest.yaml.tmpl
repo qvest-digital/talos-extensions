@@ -1,0 +1,10 @@
+version: v1alpha1
+metadata:
+  name: intel-e810-oot
+  version: "{{ .VERSION }}"
+  author: Qvest Digital
+  description: |
+    [{{ .TIER }}] This system extension provides Intel's out-of-tree ice and irdma kernel modules for E800 series controllers, built against a specific Talos version, and the DDP package released with that ice.
+  compatibility:
+    talos:
+      version: ">= v1.13.0"

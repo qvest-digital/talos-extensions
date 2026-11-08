@@ -1,0 +1,5 @@
+# first part is the ice driver version, second the commit it is built from
+VERSION: "{{ .ICE_OOT_VERSION }}-{{ .BUILD_ARG_TAG }}"
+TIER: "contrib"
+# the intel-e810-oot-pkg build, a build of the PKGS tag; each build of the fork is pushed under that tag
+E810_OOT_PKG_REF: sha256:4a38154c12897c14b7a87803b36e12a485fa60d42dc4a3594a131cf01070f974

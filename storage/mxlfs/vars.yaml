@@ -1,0 +1,5 @@
+# first part is the mxlfs version, second the commit it is built from
+VERSION: "{{ .MXLFS_VERSION }}-{{ .BUILD_ARG_TAG }}"
+TIER: "contrib"
+# the mxlfs-pkg build, a build of the PKGS tag; each build of the fork is pushed under that tag
+MXLFS_PKG_REF: sha256:a2ab16121f8118a31dac2a78c45231f80f705b565301c870f0e5787e61b88e9d

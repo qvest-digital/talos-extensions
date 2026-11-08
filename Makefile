@@ -68,7 +68,8 @@ GNU_MIRROR_URL ?= https://mirrors.kernel.org
 
 # targets defines all the available targets
 
-TARGETS = amazon-ena
+TARGETS = amazon-efa
+TARGETS += amazon-ena
 TARGETS += amdgpu
 TARGETS += amd-ucode
 TARGETS += binfmt-misc
@@ -96,6 +97,8 @@ TARGETS += harbor-credential-provider
 TARGETS += hello-world-service
 TARGETS += hyperv-guest-agent
 TARGETS += i915
+TARGETS += intel-e810-intree
+TARGETS += intel-e810-oot
 TARGETS += intel-hd-audio
 TARGETS += intel-ice-firmware
 TARGETS += intel-npu
@@ -112,6 +115,7 @@ TARGETS += mei
 TARGETS += mellanox-mstflint
 TARGETS += metal-agent
 TARGETS += multipath-tools
+TARGETS += mxlfs
 TARGETS += nebula
 TARGETS += netbird
 TARGETS += newt
