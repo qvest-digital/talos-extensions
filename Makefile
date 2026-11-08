@@ -97,6 +97,7 @@ TARGETS += harbor-credential-provider
 TARGETS += hello-world-service
 TARGETS += hyperv-guest-agent
 TARGETS += i915
+TARGETS += intel-e810-intree
 TARGETS += intel-hd-audio
 TARGETS += intel-ice-firmware
 TARGETS += intel-npu
