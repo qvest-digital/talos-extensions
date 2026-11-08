@@ -32,6 +32,7 @@ spec:
     - hyperv-guest-agent
     - i915
     - intel-e810-intree
+    - intel-e810-oot
     - intel-hd-audio
     - intel-ice-firmware
     - intel-npu
