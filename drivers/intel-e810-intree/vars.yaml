@@ -2,4 +2,4 @@
 VERSION: "{{ .E810_INTREE_VERSION }}-{{ .BUILD_ARG_TAG }}"
 TIER: "contrib"
 # the intel-e810-intree-pkg build, a build of the PKGS tag; each build of the fork is pushed under that tag
-E810_INTREE_PKG_REF: sha256:301a02ad883fd2cabf5b0d5e3981a1ba494db98754f1d6f7985e789bfdcd089e
+E810_INTREE_PKG_REF: sha256:f1a209caa6c8dba8621218abda9765109a1e6b58aac4b93556c1b554765cffc9

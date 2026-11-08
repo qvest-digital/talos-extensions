@@ -2,4 +2,4 @@
 VERSION: "{{ .ICE_OOT_VERSION }}-{{ .BUILD_ARG_TAG }}"
 TIER: "contrib"
 # the intel-e810-oot-pkg build, a build of the PKGS tag; each build of the fork is pushed under that tag
-E810_OOT_PKG_REF: sha256:08b91ce93189cef77793f4ef9cbc217eba99b73026adfbfe818569a34c3dd4c4
+E810_OOT_PKG_REF: sha256:4a38154c12897c14b7a87803b36e12a485fa60d42dc4a3594a131cf01070f974

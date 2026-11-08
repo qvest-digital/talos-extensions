@@ -18,7 +18,7 @@ dependencies:
   # ucontext in efa_create_user_cq. An unpatched efa-pkg builds and installs
   # cleanly and panics the kernel on the first completion queue opened
   # against the device.
-  - image: "ghcr.io/qvest-digital/efa-pkg:{{ .BUILD_ARG_PKGS }}"
+  - image: "ghcr.io/qvest-digital/efa-pkg@{{ .EFA_PKG_REF }}"
 steps:
   - install:
       - |
