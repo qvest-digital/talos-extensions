@@ -47,6 +47,7 @@ spec:
     - mellanox-mstflint
     - metal-agent
     - multipath-tools
+    - mxlfs
     - nebula
     - netbird
     - newt

@@ -113,6 +113,7 @@ TARGETS += mei
 TARGETS += mellanox-mstflint
 TARGETS += metal-agent
 TARGETS += multipath-tools
+TARGETS += mxlfs
 TARGETS += nebula
 TARGETS += netbird
 TARGETS += newt
